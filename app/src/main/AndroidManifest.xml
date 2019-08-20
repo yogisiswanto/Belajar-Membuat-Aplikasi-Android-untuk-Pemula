@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yogisiswanto.myintentapp">
+    package="com.yogisiswanto.myviewandviews">
 
     <application
         android:allowBackup="true"
@@ -16,8 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MoveActivity" />
-        <activity android:name="com.yogisiswanto.myintentapp.MoveWithDataActivity"></activity>
     </application>
 
 </manifest>

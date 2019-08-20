@@ -1,4 +1,4 @@
-package com.yogisiswanto.myintentapp;
+package com.yogisiswanto.myviewandviews;
 
 import org.junit.Test;
 
