@@ -1,4 +1,4 @@
-package com.yogisiswanto.myviewandviews;
+package com.yogisiswanto.myrecyclerview;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.yogisiswanto.myviewandviews", appContext.getPackageName());
+        assertEquals("com.yogisiswanto.myrecyclerview", appContext.getPackageName());
     }
 }

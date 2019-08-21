@@ -1,4 +1,4 @@
-package com.yogisiswanto.myviewandviews;
+package com.yogisiswanto.myrecyclerview;
 
 import org.junit.Test;
 
