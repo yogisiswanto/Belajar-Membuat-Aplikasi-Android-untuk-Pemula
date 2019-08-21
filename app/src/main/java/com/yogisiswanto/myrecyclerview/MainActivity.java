@@ -2,6 +2,7 @@ package com.yogisiswanto.myrecyclerview;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
@@ -33,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
         rvHeroes.setAdapter(listHeroAdapter);
     }
 
+    public void showRecyclerGrid(){
+
+        rvHeroes.setLayoutManager(new GridLayoutManager(this, 2));
+        GridHeroAdapter gridHeroAdapter = new GridHeroAdapter(list);
+        rvHeroes.setAdapter(gridHeroAdapter);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -52,13 +60,17 @@ public class MainActivity extends AppCompatActivity {
         switch (selectedMode){
 
             case R.id.action_list:
+                showRecyclerList();
                 break;
 
             case R.id.action_grid:
+                showRecyclerGrid();
                 break;
 
             case R.id.action_cardview:
                 break;
         }
     }
+
+
 }
